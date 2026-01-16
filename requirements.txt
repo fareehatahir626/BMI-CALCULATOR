@@ -1,0 +1,10 @@
+# Minimal requirements for running bmi_calculator_improved.py
+streamlit
+matplotlib
+
+# Optional: include numpy explicitly (matplotlib will pull it in, but you can pin it)
+# numpy
+
+# If you want reproducible installs, pin versions like:
+# streamlit==1.30.0
+# matplotlib==3.8.1
