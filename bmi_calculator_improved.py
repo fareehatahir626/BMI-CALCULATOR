@@ -1,6 +1,18 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 
+# Helper function for emojis (added for fun/UX)
+def get_emoji(category):
+    if category == "Underweight":
+        return "🥦"
+    elif category == "Normal weight":
+        return "✅"
+    elif category == "Overweight":
+        return "⚠️"
+    else:
+        return "🚨"
+
+
 # Modular function for BMI calculation (unchanged)
 def calculate_bmi(weight, height):
     """
@@ -98,13 +110,3 @@ st.write("---")
 st.write("Built with Streamlit. Formula: BMI = weight (kg) / (height (m))^2")
 st.write("For more on BMI, visit [WHO guidelines](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight).")
 
-# Helper function for emojis (added for fun/UX)
-def get_emoji(category):
-    if category == "Underweight":
-        return "🥦"
-    elif category == "Normal weight":
-        return "✅"
-    elif category == "Overweight":
-        return "⚠️"
-    else:
-        return "🚨"
